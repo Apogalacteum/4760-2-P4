@@ -1,7 +1,7 @@
 /* Author: Alexander Hughey
  * CS4760 F2020
- * Project 3 - OS Shell
- * Child process for project 3
+ * Project 4 - Process Scheduling
+ * User process for project 4
  */
  
 #include <stdio.h>
