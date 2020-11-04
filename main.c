@@ -32,7 +32,7 @@ int main(int argc, char* argv[])
   pthread_mutex_t myMutex = PTHREAD_MUTEX_INITIALIZER;
   //signal(SIGINT, sighandler);
   
-  //processes command line arguments
+  //////////BEGIN COMMAND LINE PARSING//////////
   //options are -h, -c x, -l file, -t time
   while((opt = getopt(argc, argv, ":hc:l:t:")) != -1)
   {
@@ -78,7 +78,6 @@ int main(int argc, char* argv[])
         return(-1);
         break;
     }//end of switch
-    
   }//end of while loop
   
   //catches extra arguments
@@ -88,12 +87,23 @@ int main(int argc, char* argv[])
     test_str_file = argv[optind];
     printf("extra argument: %s\n", test_str_file);  
   }//end of for loop
+  //////////END COMMAND LINE PARSING//////////
   
   // clearing/creating log file
   FILE *fp1; 
   fp1 = fopen(log_file, "w");
   fprintf(fp1, "");
   fclose(fp1);
+  
+  //creating structure for process control block
+  struct pcb
+  {
+    int time_cpu;
+    int time_tot;
+    int time_last;
+    int sim_PID;
+    int priority;
+  };
   
   // create shared memory for clock.
   // seconds, nanosecond, shmPID (used by child processes to indicate when they have

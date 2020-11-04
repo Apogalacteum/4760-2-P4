@@ -2,7 +2,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 How to Run:
 "make" to compile and create OS shell
-"make user" to compile and create child process
+"make user_proc" to compile and create child process
 "./oss [options]" to run
 "make clean" to remove executables
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -18,22 +18,3 @@ Log file for version control is in gitlog.txt
 Log file for processes is in log.txt
 
 !! -- INCOMPLETE -- !!
-The program will run but not to specifications.
-UPDATE: STUCK IN LOOP
-
-I wrote as many lines as I could with the extra two days that you gave us and I hadn't
-been testing it for a while and now the program gets stuck in a loop... 
-
-I did not have enough time to complete this project. I had to plan activities for my
-preschool room for much longer than I thought I would have to because one of my coworkers
-decided to take the week off. I've been very busy. I will continue to work on it 
-because I can see that the projects in the future will build off of it so I will need
-it to be complete anyway. Because I hadn't finished the previous projects completely,
-I had to do a lot more research and programming than I should have and it ended up
-taking me a lot of time to figure out things I should have done already. I did discover
-a good way to structure these projects that makes them easier to handle so I'm hopeful
-this will result in a smoother experience for me from now on.
-
-I will resubmit once I am happy with the project. It might take a couple more days but I
-do have an hour long break this Thursday and Friday where I should be able to get
-something done. 
