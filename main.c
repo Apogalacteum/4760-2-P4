@@ -20,6 +20,10 @@
 #include <pthread.h>
 #include <signal.h>
 
+// need to implement a few things but imfar too busy right now
+// plus i need to get enough sleep so I won't feel all weird when 
+// I try to talk to a cute girl that I will be seeing tomorrow.
+// I don't want to ruin my chances. You get it.
 //void sighandler(int);
 
 int main(int argc, char* argv[])

@@ -18,6 +18,9 @@
 #include <pthread.h>
 #include <signal.h>
 
+// I'd like to reiterate that I know im an idiot and I apologize
+// for being so stupid.
+
 //void sighandler(int);
 
 int main(int argc, char *argv[])
